@@ -1,5 +1,6 @@
 package com.example.springbootdemo;
 
+import org.activiti.engine.FormService;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;
@@ -16,10 +17,15 @@ public class ActivitiDemoApplicationTests {
 	
 	@Autowired
 	private RepositoryService repositoryService;
+	
 	@Autowired
 	private RuntimeService runtimeService;
+	
 	@Autowired
 	private TaskService taskService;
+	
+	@Autowired
+	private FormService formService;
 	
 	@Test
 	public void contextLoads() {
@@ -39,6 +45,5 @@ public class ActivitiDemoApplicationTests {
 	 */
 	@Test
 	public void formTestMethod() {
-	
 	}
 }
